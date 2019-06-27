@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block title %}后台管理-首页{% endblock %}
+{% block main  %}
+<div class="jumbotron">
+    <h1>Hello, {{userInfo.username}}!</h1>
+    <p>欢迎进入我的博客后台管理！ <a href="/">前台首页</a></p>
+    <p>当前用户数：{{userInfo.userCount}}</p>
+</div>
+
+{% endblock %}
